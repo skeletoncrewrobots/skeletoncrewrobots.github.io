@@ -1,0 +1,93 @@
+* {
+    font-family: 'Roboto', sans-serif;
+    overflow: hidden;
+}
+
+#textoverlaybg {
+    position: absolute;
+    padding-left: 20px; padding-right: 20px;
+    width: 100%;
+    height: 100%;
+    z-index: 3;
+    top: 60%;
+    background-color: #111315;
+    color: white;
+}
+
+#textoverlaytitle {
+    font-size: 40px;
+    text-align: center;
+}
+
+#textoverlaycontent {
+    text-align: left;
+    font-size: 24px;
+    text-indent: 4ch;
+    
+}
+
+#skLogo {
+    position: absolute;
+    width: 25%;
+    min-width: 300px;
+    z-index: 1;
+    left: 50%;
+    right: 50%;
+    transform: translate(-50%, 5%);
+}
+
+#skbanner {
+    width: 200%;
+    filter: blur(2px) grayscale(100%) brightness(50%) ;
+}
+
+.sk-navDiscord {
+    z-index: 2; color: white; background-color: #111315; font-size: 24px;
+}
+
+#contentsep {
+    width: 100%;
+}
+
+.container {
+    position: relative;
+    width: 25%;
+  }
+  
+  .image {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color:rgba(0, 0, 0, .8);
+  }
+  
+  .container:hover .overlay {
+    opacity: 1;
+  }
+  
+  .text {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 5%;
+    left: 10%;
+    text-align: left;
+  }
+
+#sponsortitle {
+    color: yellow;
+    font-size: 30px;
+    text-align: center;
+}
