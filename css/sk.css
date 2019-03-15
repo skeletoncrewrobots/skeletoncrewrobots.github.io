@@ -35,6 +35,17 @@
     right: 50%;
     transform: translate(-50%, 5%);
 }
+@media only screen and (max-width: 1800px) {
+  #skLogo {
+    position: absolute;
+    width: 35%;
+    min-width: 300px;
+    z-index: 1;
+    left: 50%;
+    right: 50%;
+    transform: translate(-50%, 15%);
+  }
+}
 
 #skbanner {
     width: 200%;
@@ -43,6 +54,17 @@
 
 .sk-navDiscord {
     z-index: 2; color: white; background-color: #111315; font-size: 24px;
+}
+@media only screen and (max-width: 750px) {
+  .sk-navDiscord {
+    z-index: 2; color: white; background-color: #111315; font-size: 20px;
+}
+}
+
+@media only screen and (max-width: 680px) {
+  .sk-navDiscord {
+    z-index: 2; color: white; background-color: #111315; font-size: 16px;
+}
 }
 
 #contentsep {
