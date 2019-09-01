@@ -1,0 +1,92 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="assets/css/main.css" />
+        <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+    </head>
+
+<body style="color: white; margin: 5px">
+
+    <div class="logo" style="text-align: center; top-margin: 20px;"><strong>7265</strong> News</div>
+
+    <div id="news">
+        <br>
+
+        <!-- Put any news posts here!-->
+        <!-- Here's the format for posting
+        Just copy paste in between the lines and change the insert stuff.
+
+        _____________________________________________________________
+
+        <div id="postTitle"> INSTERT DATE | INSERT TITLE HERE </div>
+
+        <div id="postContent"> 
+
+            INSERT POST CONTENT HERE
+
+        </div>
+        
+        ______________________________________________________________
+        -->
+        
+
+        <!-- Aug 31st 2019 THOR Post!-->
+        <div id="postTitle" class="logo"> <strong> August 31st 2019 </strong> Thor Coming Soon at THS! </div>
+        <hr>
+        <div id="postContent"> 
+
+            T.H.O.R, the first North Carolina offseason event, is coming to THS on Saturday September 14th. Visitation is free of charge. Come learn more about the STEM communities
+            in NC!
+
+        </div>
+
+        <!-- First Lego Camp Photos!-->
+        <div id="postTitle" class="logo"> <strong> August 5th</strong> FLL Summer Camp Photos </div>
+        <hr>
+        <div id="postContent"> 
+
+            Our team had a great time helping aspiring engineers learn more about the craft! You can find the photos we took at the camp at the link below.
+            <br>
+            <div onclick="hyperlink('https://drive.google.com/drive/folders/1--JKy4FnWRxAfJ12eiK1ICbTG_qyIW-1')" style="width: 0.6em">
+                <a class="button">Camp Photos</a></span>
+            </div>
+
+        </div>        
+
+
+    </div>
+</body>
+
+</html>
+
+<script>
+
+    function loadPage(x){
+        window.location.href = x;
+    }
+
+    function getRealMonth(x){
+        x = x.getMonth();
+        var month;
+        
+        switch(x){
+            case 0: month = "January"; break;
+            case 1: month = "February"; break;
+            case 2: month = "March"; break;
+            case 3: month = "April"; break;
+            case 4: month = "May"; break;
+            case 5: month = "June"; break;
+            case 6: month = "July"; break;
+            case 7: month = "August"; break; 
+            case 8: month = "September"; break;
+            case 9: month = "October"; break;
+            case 10: month = "November"; break;
+            case 11: month = "December"; break;
+        }
+        return month;
+    }
+
+    function hyperlink(x){
+        window.open(x, '_blank');
+    }
+
+</script>
